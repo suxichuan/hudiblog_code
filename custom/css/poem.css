@@ -50,3 +50,6 @@ div#location{
     background-blend-mode: normal, multiply;
     min-height: 62px;
 }
+div#location span{
+    font-weight: 800;
+}

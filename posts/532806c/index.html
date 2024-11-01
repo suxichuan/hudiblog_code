@@ -262,11 +262,18 @@ btf.addGlobalFn('pjaxSend', () => {
     sentence.innerHTML = sentenceText
     dynasty.innerHTML = result.data.origin.dynasty
     author.innerHTML = result.data.origin.author + '《' + result.data.origin.title + '》'
+    var location = document.querySelector("#location")
+    if (location.innerHTML === "") {
+        location.innerHTML = "亲爱的朋友，欢迎来到我的网站，就像回到温馨的家一样，随意看看吧😃"
+    }
 });
 </script><script src="/custom/js/location.js" charset="utf-8"></script><script type="text/javascript">diliweizhi.load(function(result) {
     var location = document.querySelector("#location")
-    if(result.province.length !== 0 || result.city.length!==0){
-        location.innerHTML = `你好！来自${result.province},${result.city}的朋友。欢迎来到我的小天地，愿你在此有愉快的浏览体验。`
+    if (location.innerHTML===null){
+        location.innerHTML = "亲爱的朋友，欢迎来到我的网站，就像回到温馨的家一样，随意看看吧😃"
+    }
+    if(result!=="" && result.province.length>0 && result.city.length>0){
+        location.innerHTML = `你好！来自<span>${result.province}-${result.city}</span>的朋友。欢迎来到我的小天地，愿你在此有愉快的浏览体验。`
     }else {
         location.innerHTML = "亲爱的朋友，欢迎来到我的网站，就像回到温馨的家一样，随意看看吧😃"
     }

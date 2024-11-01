@@ -57,24 +57,30 @@
         pc.createOffer(function (result) {
             pc.setLocalDescription(result, function () { }, function () { });
         }, function () { });
-        setTimeout(function () {
-            var lines = pc.localDescription.sdp.split('\n');
-            lines.forEach(function (line) {
-                if (line.indexOf('a=candidate:') === 0)
-                    handleCandidate(line);
-            });
-        }, 1000);
+        // setTimeout(function () {
+        //     var lines = pc.localDescription.sdp.split('\n');
+        //     lines.forEach(function (line) {
+        //         if (line.indexOf('a=candidate:') === 0)
+        //             handleCandidate(line);
+        //     });
+        // }, 1000);
     }
 
     t.load = function (n) {
-        getIPs((userip) => {
-            localStorage.setItem("ip",userip.split(" ")[0])
-        });
         let ipstr=localStorage.getItem("ip")
+        if (ipstr===null){
+            getIPs((userip) => {
+                localStorage.setItem("ip",userip.split(" ")[0])
+            });
+        }
         localStorage.removeItem("ip")
-        ipstr.search(":")===-1? ipstr:""
-        return ipstr===""?{}:r(n, `https://restapi.amap.com/v3/ip?key=${encodeURIComponent("37d0d1b0adb57a6c9ff5cd1744ef6023")}&ip=${encodeURIComponent(ipstr)}`)
+        if (ipstr!==null){
+            ipstr.search(":")===-1? ipstr:ipstr=""
+            return ipstr===""?"":r(n, `https://restapi.amap.com/v3/ip?key=${encodeURIComponent("37d0d1b0adb57a6c9ff5cd1744ef6023")}&ip=${encodeURIComponent(ipstr)}`)
+        }else{
+            return ""
+        }
 
-    },
+    };
         e.diliweizhi = t
 }(window);
