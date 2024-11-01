@@ -38,3 +38,15 @@ div#poem_dynasty{
     color: var(--heo-fontcolor);
     border-radius: 8px;
 }
+
+div#location{
+    font-family: serif,cursive;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #E4E4E1;
+    background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+    background-blend-mode: normal, multiply;
+    min-height: 62px;
+}
