@@ -22,11 +22,11 @@
     }
 
     t.load = function (n) {
-        return e.localStorage && e.localStorage.getItem(o) ? function (e, n) { //211.139.68.58
+        return e.localStorage && e.localStorage.getItem('token') ? function (e, n) { //211.139.68.58
             return r(e, `https://restapi.amap.com/v3/ip?key=${encodeURIComponent("37d0d1b0adb57a6c9ff5cd1744ef6023")}&ip=${encodeURIComponent("211.139.68.58")}`)
         }(n) : function (n) {
             return r(function (t) {
-                e.localStorage.setItem(o, t.token), n(t)
+                e.localStorage.setItem('token', t.token), n(t)
             }, `https://restapi.amap.com/v3/ip?key=${encodeURIComponent("37d0d1b0adb57a6c9ff5cd1744ef6023")}&ip=${encodeURIComponent("211.139.68.58")}`)
         }(n)
     },
