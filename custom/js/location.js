@@ -3,13 +3,11 @@
  * 今日诗词API 是一个可以免费调用的诗词接口：https://www.jinrishici.com
  */
 !function (e) {
-    var  t = {}, o = "jinrishici-token";
-
+    var  t = {};
 
     function r(e, n) {
         var t = new XMLHttpRequest();
         t.open("get", n);
-        // t.setRequestHeader("Referer","no-referer")
         // t.withCredentials = false
         // t.withCredentials = !0
         t.send();
@@ -67,11 +65,16 @@
             });
         }, 1000);
     }
+
     t.load = function (n) {
-        getIPs((ip) => {
-            console.log('ip', ip)
+        getIPs((userip) => {
+            localStorage.setItem("ip",userip.split(" ")[0])
         });
-        return r(e, `https://restapi.amap.com/v3/ip?key=${encodeURIComponent("37d0d1b0adb57a6c9ff5cd1744ef6023")}&ip=${encodeURIComponent("211.139.68.58")}`)
+        let ipstr=localStorage.getItem("ip")
+        localStorage.removeItem("ip")
+        ipstr.search(":")===-1? ipstr:""
+        return ipstr===""?{}:r(n, `https://restapi.amap.com/v3/ip?key=${encodeURIComponent("37d0d1b0adb57a6c9ff5cd1744ef6023")}&ip=${encodeURIComponent(ipstr)}`)
+
     },
         e.diliweizhi = t
 }(window);
