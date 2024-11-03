@@ -105,7 +105,7 @@
     detectApple()
   
     })()
-  </script><script>const GLOBAL_CONFIG = {
+  </script><link rel="stylesheet" href="https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-Italic/result.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
   root: '/',
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
@@ -151,7 +151,15 @@
   isHighlightShrink: false,
   isToc: true,
   postUpdate: '2024-10-28 12:28:39'
-}</script><link rel="stylesheet" href="https://ai.tianli0.top/static/public/tianli_gpt.min.css"><link rel="stylesheet" type="text/css" href="/custom/css/heoMainColor.css"><link rel="stylesheet" type="text/css" href="/custom/css/poem.css"><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/rss.xml" title="短巷与雨" type="application/atom+xml">
+}</script><link rel="stylesheet" href="https://ai.tianli0.top/static/public/tianli_gpt.min.css"><link rel="stylesheet" type="text/css" href="/custom/css/heoMainColor.css"><link rel="stylesheet" type="text/css" href="/custom/css/poem.css"><link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-Italic/result.css' /><!--添加的//- global config
+!=partial('includes/head/config', {}, {cache: true})
+
+include ./head/config_site.pug
+include ./head/noscript.pug
+
+!=fragment_cache('injectHeadJs', function(){return inject_head_js()})
+
+!=fragment_cache('injectHead', function(){return injectHtml(theme.inject.head)})--><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/rss.xml" title="短巷与雨" type="application/atom+xml">
 </head><body><script>window.paceOptions = {
   restartOnPushState: false
 }
@@ -252,7 +260,7 @@ btf.addGlobalFn('pjaxSend', () => {
 </ol>
 <p>其他云存储服务和图床的配置基本上大致相同。这里就不展开描述了。后续可能会添加其他的免费的图床配置的内容。</p>
 <p>完结</p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Hudi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/posts/532806c/">http://example.com/posts/532806c/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">短巷与雨</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%B7%A5%E5%85%B7/">工具</a><a class="post-meta__tags" href="/tags/%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE/">图床配置</a><a class="post-meta__tags" href="/tags/Picgo/">Picgo</a><a class="post-meta__tags" href="/tags/%E4%BA%91%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1/">云存储服务</a></div><div class="post-share"><div class="social-share" data-image="https://s2.loli.net/2024/10/20/6NEptbIQKHLAfXx.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="/custom/css/share.min.css" media="print" onload="this.media='all'"><script src="/custom/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/posts/7b34242e/" title="Oracle学习基础笔记(一)"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2024/10/20/QGgJ5LwcjVuiI2X.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">Oracle学习基础笔记(一)</div></div><div class="info-2"><div class="info-item-1">PL&#x2F;SQL developer安装1、安装PL&#x2F;SQL developer程序，安装目录不要出现中文。 2、配置客户端路径：点击PL&#x2F;SQL developer界面的Configure-&gt;Preferences-&gt;oracle配置的connect属性配置。，和 指定Oracle Home 路径：D:\BaiduNetdiskDownload\client\instantclient_12_1 指定OCI library路径：D:\BaiduNetdiskDownload\client\instantclient_12_1\oci.dll  3、在 ORACLE 的以下安装目录中找到 tnsnames.ora 文件，拷贝到本地电脑的 D盘根目录。打开 tnsnames.ora 文件编辑配置oracle所在的服务器IP地址，设置环境变量 TNS_ADMIN 为 D 盘根目录( tnsnames.ora 所在目录 )  4、中文编码设置查看服务器端编码  1SQL:select userenv(&#x27;language&#x27;)...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/1e46a8be/" title="Flume基础学习（一）"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2024/10/28/Nz39OC2F7swuYIB.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-10-28</div><div class="info-item-2">Flume基础学习（一）</div></div><div class="info-2"><div class="info-item-1">Flume基础学习（一）🔔碎碎念：​		之前仅仅在毕业设计中用到了这个工具，做为数据分析的行为日志采集工具，到目前为止在工作中也没有使用到和涉及到。当时在使用这个工具时，学习的内容的深度相对来说也比较浅薄。后续会根据学习内容和规划做相应的调整，完善相关的学习笔记。本文主要介绍了Flume工具的基本配置使用、各个组件在其中发挥的作用、内部架构等。 一、Flume概述：1、定义：Flume是Cloudera提供的一个高可用的，高可靠的，分布式的海量日志采集、聚合和传输的系统。Flume基于流式架构，灵活简单。 2、Flume架构   agent：  Agent是一个JVM进程，它以事件的形式将数据从源头送至目的。 Agent主要有3个部分组成，Source、Channel、Sink。   source Source是负责接收数据到Flume Agent的组件。Source组件可以处理各种类型、各种格式的日志数据，包括avro、thrift、exec、jms、spooling directory、netcat、 taildir 、sequence...</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avator.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Hudi</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">18</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/suxichuan"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget" id="card-poem"><div id="location"></div><div id="poem_sentence"></div><div id="poem_info"><div id="poem_dynasty"></div><div id="poem_author"></div></div></div><script src="/custom/js/jinrishici.js" charset="utf-8"></script><script type="text/javascript">jinrishici.load(function(result) {
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Hudi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/posts/532806c/">http://example.com/posts/532806c/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">短巷与雨</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%B7%A5%E5%85%B7/">工具</a><a class="post-meta__tags" href="/tags/%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE/">图床配置</a><a class="post-meta__tags" href="/tags/Picgo/">Picgo</a><a class="post-meta__tags" href="/tags/%E4%BA%91%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1/">云存储服务</a></div><div class="post-share"><div class="social-share" data-image="https://s2.loli.net/2024/10/20/6NEptbIQKHLAfXx.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="/custom/css/share.min.css" media="print" onload="this.media='all'"><script src="/custom/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/posts/7b34242e/" title="Oracle学习基础笔记(一)"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2024/10/20/QGgJ5LwcjVuiI2X.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">Oracle学习基础笔记(一)</div></div><div class="info-2"><div class="info-item-1">PL&#x2F;SQL developer安装1、安装PL&#x2F;SQL developer程序，安装目录不要出现中文。 2、配置客户端路径：点击PL&#x2F;SQL developer界面的Configure-&gt;Preferences-&gt;oracle配置的connect属性配置。，和 指定Oracle Home 路径：D:\BaiduNetdiskDownload\client\instantclient_12_1 指定OCI library路径：D:\BaiduNetdiskDownload\client\instantclient_12_1\oci.dll  3、在 ORACLE 的以下安装目录中找到 tnsnames.ora 文件，拷贝到本地电脑的 D盘根目录。打开 tnsnames.ora 文件编辑配置oracle所在的服务器IP地址，设置环境变量 TNS_ADMIN 为 D 盘根目录( tnsnames.ora 所在目录 )  4、中文编码设置查看服务器端编码  1SQL:select userenv(&#x27;language&#x27;)...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/1e46a8be/" title="Flume基础学习（一）"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2024/10/28/Nz39OC2F7swuYIB.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-10-28</div><div class="info-item-2">Flume基础学习（一）</div></div><div class="info-2"><div class="info-item-1">Flume基础学习（一）🔔碎碎念：​		之前仅仅在毕业设计中用到了这个工具，做为数据分析的行为日志采集工具，到目前为止在工作中也没有使用到和涉及到。当时在使用这个工具时，学习的内容的深度相对来说也比较浅薄。后续会根据学习内容和规划做相应的调整，完善相关的学习笔记。本文主要介绍了Flume工具的基本配置使用、各个组件在其中发挥的作用、内部架构等。 一、Flume概述：1、定义：Flume是Cloudera提供的一个高可用的，高可靠的，分布式的海量日志采集、聚合和传输的系统。Flume基于流式架构，灵活简单。 2、Flume架构   agent：  Agent是一个JVM进程，它以事件的形式将数据从源头送至目的。 Agent主要有3个部分组成，Source、Channel、Sink。   source Source是负责接收数据到Flume Agent的组件。Source组件可以处理各种类型、各种格式的日志数据，包括avro、thrift、exec、jms、spooling directory、netcat、 taildir 、sequence...</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div class="comment-switch"><span class="first-comment">Waline</span><span id="switch-btn"></span><span class="second-comment">Twikoo</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avator.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Hudi</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">18</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/suxichuan"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget" id="card-poem"><div id="location"></div><div id="poem_sentence"></div><div id="poem_info"><div id="poem_dynasty"></div><div id="poem_author"></div></div></div><script src="/custom/js/jinrishici.js" charset="utf-8"></script><script type="text/javascript">jinrishici.load(function(result) {
     var sentence = document.querySelector("#poem_sentence")
     var author = document.querySelector("#poem_author")
     var dynasty = document.querySelector("#poem_dynasty")
@@ -370,7 +378,7 @@ btf.addGlobalFn('pjaxSend', () => {
   const initWaline = (Fn) => {
     const waline = Fn(Object.assign({
       el: '#waline-wrap',
-      serverURL: 'https://waline.suxichuan.icu',
+      serverURL: 'https://walineblog.suxichuan.icu',
       pageview: false,
       dark: 'html[data-theme="dark"]',
       path: window.location.pathname,
@@ -402,6 +410,46 @@ btf.addGlobalFn('pjaxSend', () => {
     else setTimeout(loadWaline, 0)
   } else {
     window.loadOtherComment = loadWaline
+  }
+})()</script><script>(() => {
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.suxichuan.icu',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.suxichuan.icu',
+      region: '',
+      onCommentLoaded: () => {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(init,0)
+    else btf.getScript('https://npm.elemecdn.com/twikoo/dist/twikoo.all.min.js').then(init)
+  }
+
+  if ('Waline' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = loadTwikoo
   }
 })()</script></div><script>let tianliGPT_postSelector = '\#post \#article-container';let tianliGPT_key = '5Q5mpqRK5DkwT1X9Gi5e';</script><script src="https://ai.tianli0.top/static/public/tianli_gpt.min.js"></script><script defer="defer" id="ribbon" src="/custom/js/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="/custom/js/canvas-fluttering-ribbon.min.js"></script><script src="/custom/js/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
 POWERMODE.shake = true;
