@@ -4,7 +4,6 @@
  */
 !function (e) {
     var  t = {};
-
     function r(e, n) {
         var t = new XMLHttpRequest();
         t.open("get", n);
